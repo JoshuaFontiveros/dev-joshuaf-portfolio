@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+/* Header elements */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ .container-fluid {
+    background-color: rgb(110,162,52);
+    height: 60px;
+    width: 100%;
+}
+
+ header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+ }
+
+ nav {
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+ }
+ 
+/* #body-bg {
+   
+} */
+
+body {
+    background-color: rgb(255,252,207);
+}
+.body-bg {
+    position: absolute;
+    width: 100%;
+    height: 172vh;
+    opacity: 0.1;
+
+}
+
+ h2,h1 {
+     font-family: 'Style Script', 'Arial', 'sans-serif';
+     padding-top: 5px;
+     padding-left: 10px;
+ }
+
+
+
+ #pizza-logo {
+     height: 45px;
+     padding-bottom: 30px;
+ }
+
+
+ li {
+     list-style: none;
+     display: inline-block;
+ }
+
+ a > img {
+     image-resolution: initial;
+     height: 20px;
+     width: 20px;
+     margin-left: 5px;
+     margin-bottom: 5px;
+ }
+ 
+ .btn {
+    color: white;
+    border: none;
+}
+
+/* End of header elements */
+
+ /* Hamburger menu */
+ .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: solid 5px red; */
+    margin-top: 10px;
+    height: 50px;
+    width: auto;
+}
+
+#hamburger {
+   display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+/* End of hamburger menu */
+
+/* Start of carousel */
+.carousel-and-description-container {
+     /* background-color: rgb(0,0,0,0.2); */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     border: 2px solid black;
+     width: 100%;
+     height: 100%;
+ }
+
+ #our-menu {
+     display: flex;
+     justify-content: center;
+     width: 1125px;
+ }
+ #carouselExampleCaptions {
+    width: 75%;
+ }
+ 
+ .carousel-inner {
+     border-radius: 15px;
+
+ }
+
+ 
+
+ .carousel-caption {
+    float: right;
+ }
+
+ /* end of carousel */
+
+/* section1 */
+/* Our owners Container */
+
+.owner-section {
+    height: 1500px;
+    width: 100%;
+    border: solid 2px black;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+.our-owners-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 1000px;
+    flex-wrap: wrap;
+    border: solid 2px black;
+
+}
+
+.owner-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 3px black;
+    background-color: rgb(255,220,2,0.2);
+    height: 400px;
+    width: 700px;
+}
+
+.paragraph-container {
+    /* border: 3px solid red; */
+    width: 73.39%;
+    height: 100%;
+}
+#kganda, #janeganda {
+    height: 85%;
+    width: 85%;
+}
+.img-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(233,156,5); 
+    border-radius: 5px;
+    height: 180px;
+    width: 200px;
+    
+}
+
+.title-position-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid red;
+    height: 27%;
+    width: 26%;
+}
+
+/* end of section1 */
+
+
+
+
+
+/* end of our menu container  */
+ /* custom divider */
+
+
+ /* top wavy div */
+ .custom-shape-divider-top-1629033731 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1629033731 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1629033731 .shape-fill {
+    fill: #EBE16B;
+}
+
+
+/* bottom wavy div */
+.custom-shape-divider-bottom-1629041288 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629041288 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1629041288 .shape-fill {
+    fill: #EBE16B;
+}
+
+
+/* Mobile first approach */
+@media only screen and (max-width: 576px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        color: white;
+     }
+
+
+
+     nav {
+         border: 2px solid black;
+         width: 100px;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+     label {
+         display: block;
+         cursor: pointer;
+         width: 26px;
+         float: right;
+     }
+     .hamburger-menu {
+         border: 2px solid black;
+         text-align: center;
+         width: 100%;
+         display: none;
+         clear: right;
+     }
+
+     .hamburger-menu li {
+         display: block;
+         border-bottom: solid 5px black;
+         margin: 0;
+         color: yellow;
+         background-color: black;
+         opacity: 90%;
+     }
+
+     #hamburger, #toggle {
+         height: 200px;
+         width: 5000px;
+     }
+
+     #toggle, #hamburger {
+         display: contents;
+     }
+
+     #toggle:checked + .menu {
+        display: block;
+     }
+
+     .carousel-caption {
+         height: 100%;
+         width: 100%;
+     }
+     .carousel-and-description-container {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+         .our-owners-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        .owner-container {
+            display: flex;
+            border: solid 3px black; 
+            background-color: rgb(255,220,2,0.2);
+            height: 50%;
+            width: 100%;
+        }
+        #carouselExampleCaptions {
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .carousel-caption {
+            height: 25%;
+            width: 70%;
+            margin-right: 160px;
+        }
+       
+
+     }
+    
+
+
+
+    
+
