@@ -124,13 +124,27 @@ body {
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
-        width: 25%;
+        width: 55%;
         margin-top: 30px;
-        margin-bottom: 30px;
-        height: 100%;
+        margin-bottom: 5px;
         background-color: rgb(255,252,207);
         border-radius: 10px;
    
+}
+
+.btn-flavors-shake1 {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.btn-flavors-shake2 {
+    color: black;
+    text-decoration: none;
+    position: relative; 
+    top: 74px;
 }
 
 
@@ -187,21 +201,61 @@ body {
     align-items: center;
  }
 
+ .carousel-pagination {
+     color: black;
+ }
  .carousel-img-container {
      height: 100%;
  }
 
  .pizza-flavor-container {
-    height: 83.1%;
+    height: 92%;
     /* border: 2px solid black; */
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
     margin-left: 50%;
-    margin-bottom: 20%;
+    margin-bottom: 25%;
+ }
+ 
+ .box-container1 {
+     /* border: solid 2px black; */
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 100%;
+     width: 50%;
+ }
+
+ .box-container2 {
+    /* border: solid 2px black; */
+    display: flex;
+    justify-content: flexstart;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+ /* .pizza-flavor-container > a {
+     margin-top: 55px;
+ } */
+
+#pizza-flavor {
+    margin-left: 15px;
+    margin-top: 0px;
+ }
+
+ #chillito {
+     margin-top: 42px;
+     position: relative;
+     bottom: 40px;
  }
 
 
@@ -314,6 +368,76 @@ body {
 }
 
 /* end of section1 */
+/* start of section2 */
+
+.our-products {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+#our-products-heading {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aside-container {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+}
+.product-card-container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+
+.card {
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    background-color: rgb(255,220,2,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+  
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid maroon;
+}
+
+.shake-box {
+    border-radius: 10px;
+}
+
+.product-card-container > div {
+   height: 100%;
+   width: 350px;
+}
 
 
 
