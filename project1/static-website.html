@@ -8,6 +8,8 @@
     <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./style.css">
 <link rel="icon" href="./pizza-icon.png">
 
@@ -133,7 +135,7 @@
                     <a tabindex="0" role="button" data-bs-trigger="focus" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="btn-flavors btn-outline-warning" data-bs-placement="left" data-bs-toggle="popover" title="Ingredients" data-bs-content="Pizza Dough, Bacon, Ham, Mushroom, Onions and Cheese!">Bacon</a>
                  </div>
                  <div class="box-container2">
-                    <h2 id="chillito">Chillito</h2>
+                    <h2 id="chillito">Chillito Shakes</h2>
                     <a tabindex="0" role="button" data-bs-trigger="focus" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="btn-flavors-shake1 btn-outline-warning" data-bs-placement="bottom" data-bs-toggle="popover" title="Ingredients" data-bs-content="Mango, crushed ice, crushed graham and condensed milk!">Mango Graham Shake</a>
                     <a tabindex="0" role="button" data-bs-trigger="focus" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="btn-flavors-shake2 btn-outline-warning" data-bs-placement="bottom" data-bs-toggle="popover" title="Ingredients" data-bs-content="Avocado, crushed ice, and condensed milk!">Avocado Smoothie</a>
                 </div>  
@@ -326,16 +328,13 @@
         </div>
         <section class="our-products">
             <h2 id="our-products-heading">Our Products</h2>
-            <div class="aside-container">
-                
-            </div>
                 <div class="product-card-container">
                     <div class="card circle-body">
                         <img src="./czyrah-ham-and-cheese.jpg" class="card-img-top circle" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Ham and Cheese</h5>
                         <p class="card-text">Yummy! Gusto mo? Bili ka.</p>
-                        <a class="btn btn-lg btn-warning">Order now at &#8369;65 onlyr</a>
+                        <a class="btn btn-lg btn-warning">Order now at &#8369;65 only</a>
                         </div>
                     </div>
                     <div class="card circle-body">
@@ -351,7 +350,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Pepperoni</h5>
                         <p class="card-text">Yummy! Gusto mo? Bili ka.</p>
-                        <a class="btn btn-lg btn-warning">Order now at &#8369;75 onlyOrder</a>
+                        <a class="btn btn-lg btn-warning">Order now at &#8369;75 only</a>
                         </div>
                     </div>
                     <div class="card circle-body">
@@ -362,32 +361,154 @@
                         <a class="btn btn-lg btn-warning">Order now at &#8369;85 only</a>
                         </div>
                     </div>
+                    <div class="card-shake-txt ">
+                        <h3 id="yummy-pizza-heading"> <img class="yummy-pizza" src="./pizza-letter-a.png" alt="">ur Pizza </h3>
+                        <p id="card-shake-paragraph"> would be best partner with our fruit shakes and smoothies!
+                            <img src="./mango-graham-shake-logo.png" alt="" class="smoothies-logo">
+                            <img src="./avocado-smoothie-logo.png" alt="" class="smoothies-logo">
+                        </p>  
+                    </div>
                     <div class="card">
                         <img src="./mango-graham-shake.jpg" class="card-img-top shake-box" alt="...">
-                        <div class="card-body">
+                        <div class="card-body2">
                         <h5 class="card-title">Mango Graham Shake</h5>
-                        <p class="card-text">Yummy! Gusto mo? Bili ka.</p>
-                        <a href="#" class="btn btn-lg btn-warning">Order</a>
+                        <p class="card-text2">Sizes available at: <strong>Small for &#8369;25 Medium for
+                            &#8369;40 </strong> <br><strong> Large for &#8369;55!</strong></p>
+                        <a class="order-shake-btn btn btn-lg btn-warning">Order</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./creamy-avocado.jpg" class="card-img-top shake-box" alt="...">
-                        <div class="card-body">
+                        <div class="card-body2  ">
                         <h5 class="card-title">Avocado Smoothie</h5>
-                        <p class="card-text">Yummy! Gusto mo? Bili ka.</p>
-                        <a href="#" class="btn btn-lg btn-warning">Order</a>
+                        <p class="card-text2">Sizes available at <strong>Small for &#8369;25 Medium for
+                            &#8369;40 </strong> <strong>Large for &#8369;55!</strong></p>
+                        <a class="order-shake-btn btn btn-lg btn-warning">Order</a>
                         </div>
+                    </div>
+                    <div class="card-shake-txt2">
+                        <h3 id="grab-this"> Partner this to our pizza for heavenly treats!
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                            <img src="./excited-face-logo.png" alt="" class="excited-face-logo">
+                        </h3>
+                       
                     </div>
                 </div>
         </section>
     </div>
-
+   
+     <!-- top wavy div -->
+     <div class="custom-shape-divider-top-1629033731">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <section class="faqs-section">
+        <h3><strong>Frequently Asked Questions</strong></h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Anong size ng pizza nyo?  
+                </button>
+              </h4>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Ang size po ng pizza namin ay 26 inches.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed btn-warning"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is your business hours?
+                </button>
+              </h4>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>From 10:30 am to 7 pm po bukas ang stores namin.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Hanggang saan lang kayo nagdedeliver ng pizza?
+                </button>
+              </h4>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>As of now, ang sakop pong local delivery po namin ay sa Brgy. 175 to 178, and the rest po is sa lalamove na or grabfood</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Pwede bang bumili ng one or two slices lang sa pizza nyo?
+                  </button>
+                </h4>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>Hindi po pwede na per slice, whole pizza lang po ang bentahan namin.</p></div>
+                </div>
+              </div>
+          </div>
+    </section>
+    <!-- bottom wavy div -->
+    <div class="custom-shape-divider-bottom-1629042509">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- top wavy div -->
+    <div class="custom-shape-divider-top-1629033731">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <section class="reviews-section">
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-img-top">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script>  
        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
                 })
-    </script>  
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})</script>
 </body>
 </html>
