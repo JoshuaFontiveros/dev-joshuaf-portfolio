@@ -541,17 +541,88 @@ body {
 /* section 4 reviews */
 
 .reviews-section {
-    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
+}
+
+.card2 {
+        width: 100%;
+        background-color: rgb(255,220,2,0.2);
+        border-radius: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;    
+        flex-direction: column;
+    
+}
+
+.card2-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rating-checked {
+    color: orange;
+    display: inline-block;
+}
+
+.shake-box-2 {
+    border-radius: 15px;
+
+}
+
+.owl-carousel {
+    width: 70%;
+    display: flex;
+    margin: 20px;
 }
 
 .border-red {
     border: 2px solid red;
 }
 
+
+/* end of section 4 */
+
+/* start of section 5 */
+
+.contact-us-delivery-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contact-us-delivery-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-us-delivery-box-container {
+    width: 100%;
+    display: flex;
+}
+.contact-us-box, .delivery-box {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.dropdown-toggle {
+    width: 50%; 
+}
+/* end of section 5 */
 
 /* end of our menu container  */
  /* custom divider */
