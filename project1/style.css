@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --animate-duration: 800ms;
@@ -42,6 +43,7 @@
 
 body {
     background-color: rgb(255,252,207);
+    width: 100%;
 }
  h1 {
      font-family: 'Style Script', 'Arial', 'sans-serif';
@@ -155,7 +157,6 @@ h4 {
     color: black;
     text-decoration: none;
     position: relative; 
-    top: 74px;
 }
 
 
@@ -534,8 +535,11 @@ h4 {
 .accordion {
     width: 50%;
 }
+.accordion-header {
+    width: 100%;
+}
 
-.accordion-button, .accordion-body{
+.accordion-button, .accordion-body, .accordion-header{
     background-color: rgb(255,220,2,0.2);
 }
 
@@ -756,6 +760,10 @@ footer {
 /* end of our menu container  */
  /* custom divider */
 
+ /* random */
+ .card-title, .card-text2, .order-shake-btn, .accordion-button, .accordion-body {
+    font-family: 'Montserrat', 'sans-serif';
+ }
 
  /* top wavy div */
  .custom-shape-divider-top-1629033731 {
@@ -796,6 +804,11 @@ footer {
 
 .custom-shape-divider-bottom-1629042509 .shape-fill {
     fill: #E8DC50;
+}
+
+/* pseudo-classes */
+.paragraph-container > p {
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 /* Mobile last approach */
@@ -852,6 +865,155 @@ footer {
      #toggle:checked + .hamburger-menu {
         display: block;
      }
+
+     }
+
+     /* tablet */
+     @media only screen and (max-width: 768px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: white;
+         }
+         .container-fluid {
+                width: 1000px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+         }
+    
+    
+    
+         nav {
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+         }
+         label {
+             display: block;
+             cursor: pointer;
+             width: 26px;
+             float: right;
+         }
+         .hamburger-menu {
+             border: 2px solid black;
+             text-align: center;
+             width: 1000px;
+             display: none;
+             clear: right;
+         }
+    
+         .hamburger-menu li {
+             display: block;
+             border-bottom: solid 5px black;
+             margin: 0;
+             color: yellow;
+             background-color: black;
+             opacity: 90%;
+         }
+    
+         #hamburger, #toggle {
+             height: 200px;
+         }
+    
+         #toggle, #hamburger {
+             display: contents;
+         }
+    
+         #toggle:checked + .hamburger-menu {
+            display: block;
+         }
+         #our-menu, .carousel-caption > h1, #pizza-flavor > h2 {
+             font-size: 40px;
+
+         }
+
+         #pizza-flavor {
+             width: 100%;
+             margin-right: 19px;
+         }
+
+         .box-container1 > h2, .box-container2 > h2 {
+            font-size: 25px;
+         }
+
+         .pizza-flavor-container {
+            height: 61.33%;
+            /* border: 2px solid black;  */
+            width: 33.32%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: absolute;
+            margin-left: 55%;
+            margin-bottom: 16.66%;
+         }
+
+         .box-container2 {
+             /* border: solid 2px black; */
+             position: relative;
+             left: 50px;
+         }
+         .btn-flavors {
+            font-family: 'Style Script', 'Arial', 'sans-serif';
+            color: black;
+            border: none;
+            text-decoration: none;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+                width: 100%;
+                background-color: rgb(255,252,207);
+                border-radius: 5px;
+           
+        }
+
+        .btn-flavors-shake1 {
+            margin-top: 17px;
+        }
+
+        #our-team {
+            width: 100%; 
+        }
+
+        .our-owners-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 50px;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        
+        }
+        .owner-container {
+            margin-bottom: 20px;
+        }
+        .product-card-container {
+            border: 2px solid black;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .card {
+            width: 500px;
+        }
+
+        .card-shake-txt, .card-shake-txt2 {
+        order: -1;
+        width: 20%;
+        }
 
      }
     
