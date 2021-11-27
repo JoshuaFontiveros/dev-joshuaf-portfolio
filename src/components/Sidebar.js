@@ -8,7 +8,7 @@ import Profile from '../assets/profile_pic.jpg';
 
 const Sidebar = () => {
   const [sidebar, setSideBar] = useState(false);
-
+  // Test test
   const showSideBar = () => setSideBar(!sidebar);
   return (
     <React.Fragment>
